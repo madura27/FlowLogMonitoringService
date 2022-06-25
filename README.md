@@ -70,4 +70,14 @@ This will run all the unit tests. If you wish to run a subset of the tests, you 
 
 The \<pattern-to-match> argument is forwarded to pytest's -k flag. You can pass string patterns that will be matched against file names and function names. You can read the documentation for the flag [here](https://docs.pytest.org/en/stable/usage.html#specifying-tests-selecting-tests).
 
+## Challenges
+
+- One of the biggest challenges were to weigh between writing tests for the basic functionality vs adding more features like durability etc.
+
+## Future Scope
+
+- To make this service durable. Can achieve this by replacing the in-memory store to a persistent data store like MongoDB or Redis. This choice can also be beneficial to move from single node to distributed data engine.
+- Perform intensive performance test to measure application performance and identify bottleneck.
+- Can choose another language like Java/Go to take advantage of multiple cores on the system.
+
 Happy reviewing!
