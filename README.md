@@ -46,6 +46,7 @@ POST call:
 ## Assumptions and limitations
 - This implementation assumes that the service will be run on a single node.
 - This implementation does not tolerate crashes/restarts. That is, upon restarting the service, any flow data that was stored previously will be lost.
+- In the case of failure in the API call, the caller is responsible for retrying.
 
 ## Code layout
 All the python source code is under the src/ directory. The main.py file is the starting point of the application.
